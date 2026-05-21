@@ -1,0 +1,15 @@
+body {
+    background-image: url('../images/hoppers.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section {
+    margin-bottom: 150px;
+}
+
+.card {
+    background-color: rgba(226, 212, 212, 0.428);
+}

@@ -1,4 +1,3 @@
-from pyexpat import model
 from django.db import models
 from django.contrib.auth.models import User
 import os
@@ -64,3 +63,9 @@ class Comment(models.Model):
 
     def __str__(self):
         return f'{self.author}::{self.content}'
+
+    def get_absolute_url(self):
+        return f'{self.post.get_absolute_url()} #comment-{self.pk}'
+
+    def get_avartar_url(self):
+        return 'http://placehold.it/50x50'
